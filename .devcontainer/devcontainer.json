@@ -9,6 +9,11 @@
       "corepack": true
     }
   },
+  "hostRequirements": {
+  "cpus": 4,
+  "memory": "32gb",
+  "storage": "64gb"
+  },
   "waitFor": "updateContentCommand",
   "updateContentCommand": "cd examples/magento-graphcms && yes ' ' | yarn install",
   "postAttachCommand": "cd examples/magento-graphcms && yes ' ' | yarn dev",
